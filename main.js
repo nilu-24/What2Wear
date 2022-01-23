@@ -14,26 +14,41 @@ fetch("https://api.openweathermap.org/data/2.5/forecast?q="+location.value+"&app
     }
 })
 
-
 }
 
 //Determing what to wear.
 function getClothing () {
+
+    var count = 0;
+
     const location = document.getElementById("location")
     fetch("https://api.openweathermap.org/data/2.5/forecast?q="+location.value+"&appid=c9dbfe419caaad8dfe99e90d39c81b98")
     .then(response => response.json())
     .then(data => {
-        temp = Number(data.list[8].main.feels_like - 273.15).toFixed(1)
-        
 
+        document.getElementById("umbrella").innerHTML = "No need to take an umbrella!";
+        document.getElementById("img_umbrella").src = "./clothes/no_need.png"
+
+        for(i=0;i<5;i++){
+        temp_ = Number(data.list[8*i].main.feels_like - 273.15).toFixed(1)
+        temp_ = parseFloat(temp_)
+        count += temp_
+        }
+
+        temp = count/5
+        console.log(temp)
         //check what the actual spelling is
         for(i = 0; i<5; i++) {
             cond = String(data.list[8*i].weather[0].main)
            if (cond == "Rain"){
             document.getElementById("umbrella").innerHTML = "Don't forget to take an umbrella!";
-            break;
+            document.getElementById("img_umbrella").src = "./clothes/umbrella.png"
            }
         }
+
+
+
+        
 
         if (temp < -3.9) {
             document.getElementById("head").innerHTML= "Head: Beanie";
