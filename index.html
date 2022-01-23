@@ -22,6 +22,7 @@
     border: 5px solid rgb(88, 88, 88);
     border-radius: 15px;
     text-align: center;
+    font-weight: bold;
 }
 
 .image{
@@ -56,7 +57,16 @@
     float: left;
 
 }
-
+.container2{
+    margin-top:auto;
+    float: left;
+}
+h6{
+    text-align: center;
+}
+.msg{
+    margin-bottom: 20px;
+}
 
 
     </style>
@@ -68,7 +78,7 @@
     <!--Navbar-->
 <nav class="navbar navbar-expand-lg bg-dark text-white">
     <div class="container">
-       <h1>What2Wear? <span style="color: rgb(133, 133, 133); font-size: medium;"> Interactive Clothing Recommender</span></h1> 
+       <h1>What2Wear?<span style="color: rgb(184, 184, 184); font-size: medium;"> Interactive Clothing Recommender</span></h1> 
   
 
 
@@ -80,18 +90,19 @@
      <!--Main-->
      <div class="container">
 
-        Going for a short trip? Just tell us where you are headed and get the best clothes to take along with you!
-        <br>
-        <br>
-        <br>
+        <h6>Going for a short 5-day trip? </h6>
+           <h6> Just tell us where you are headed and get the best clothes to take along with you!👕</h6>
+    
 
-        <h3>Weather Report: </h3>
+        <h3>Enter Your Location: </h3>
      <div class="input-group mb-3">
         <input type="text" class="form-control" placeholder="Enter Location" aria-label="Recipient's username" aria-describedby="button-addon2" id="location">
         <div class="input-group-append">
           <button onclick = "getLocation(); getClothing();"class="btn btn-outline-secondary" type="button" id="button-addon2">Click Here!</button>
         </div>
     </div>
+
+    <h3>Weather: </h3>
 
       <div class="weather-section">
           <div class="icons-section">
@@ -170,8 +181,18 @@
        <p id="snow"></p>
 
     </div>
+
+    
+
     </div>
 
+<div class="container">
+    <div class="container2">
+    <h5>Last But Not The Least - Don't Forget To Wear A Mask 😷 </h5>
+    
+    <p class="msg"> ❤️ Stay safe, stay healthy and maintain social distancing! ❤️ </p>
+</div>
+</div>
 
 </body>
 </html>
