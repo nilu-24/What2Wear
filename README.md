@@ -2,7 +2,9 @@
 
 Know where to go but not what to wear? Fear not! Use this app, enter your location and our recommender system suggests you the coolest (no pun intended) drips you can pull off based on the weather!
 
+![](https://github.com/nilu-24/What2Wear/blob/master/demo.gif?raw=true)
 
+A demo of our app.
 
 ## Inspiration
 We thought about what we missed most at the start of the pandemic and came up with one simple answer — travelling! Be it for one day or five, going out on a trip somewhere is a luxury we had taken for granted. However as the severity of the pandemic lessens, we can start looking forward to travelling again (while exercising caution of course!).
