@@ -17,6 +17,7 @@
     margin: 20px;
     border: 5px solid rgb(88, 88, 88);
     border-radius: 15px;
+    text-align: center;
 }
 
 .image{
@@ -52,6 +53,8 @@
 
 }
 
+
+
     </style>
 
 </head>
@@ -82,7 +85,7 @@
      <div class="input-group mb-3">
         <input type="text" class="form-control" placeholder="Enter Location" aria-label="Recipient's username" aria-describedby="button-addon2" id="location">
         <div class="input-group-append">
-          <button onclick = "getLocation()"class="btn btn-outline-secondary" type="button" id="button-addon2">Click Here!</button>
+          <button onclick = "getLocation(); getClothing();"class="btn btn-outline-secondary" type="button" id="button-addon2">Click Here!</button>
         </div>
     </div>
 
@@ -135,10 +138,22 @@
 
       <div class="container1">
         <h3>Clothing Suggestions:</h3>
-       <p id="head">Head: </p>
-       <p id="torso">Torso: </p>
-       <p id="pant">Pants: </p>
-       <p id="shoes">Footwear: </p>
+
+        <div class = "icons">
+            <p  id="head">Head: </p>
+        </div>
+        <div class = "icons">
+            <p id="torso">Torso: </p>
+        </div>
+        <div class = "icons">
+            <p id="pant">Pants: </p>
+        </div>
+        <div class = "icons">
+            <p id="shoes">Footwear: </p>
+        </div>
+        
+       <p id="umbrella">No need to bring umbrella</p>
+       <p id="snow"></p>
 
     </div>
     </div>
