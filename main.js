@@ -47,9 +47,6 @@ function getClothing () {
         }
 
 
-
-        
-
         if (temp < -3.9) {
             document.getElementById("head").innerHTML= "Head: Beanie";
             document.getElementById("img_head").src = "./clothes/beanie.png"
