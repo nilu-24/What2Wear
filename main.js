@@ -39,7 +39,7 @@ function getClothing () {
             document.getElementById("head").innerHTML= "Head: Beanie";
             document.getElementById("img_head").src = "./clothes/beanie.png"
 
-            document.getElementById("pant").innerHTML = "Pants: Woolen plants with thermals";
+            document.getElementById("pant").innerHTML = "Pants: Woolen pants with thermals";
             document.getElementById("img_pants").src = "./clothes/woolenpants.png"
 
             document.getElementById("torso").innerHTML = "Torso: Winter Jacket";
@@ -52,7 +52,7 @@ function getClothing () {
             document.getElementById("head").innerHTML= "Head: Beanie";
             document.getElementById("img_head").src = "./clothes/beanie.png"
 
-            document.getElementById("pant").innerHTML = "Pants: Woolen plants with thermals";
+            document.getElementById("pant").innerHTML = "Pants: Woolen pants with thermals";
             document.getElementById("img_pants").src = "./clothes/woolenpants.png"
 
             document.getElementById("torso").innerHTML = "Torso: Light to medium coat";
@@ -96,7 +96,7 @@ function getClothing () {
 
             document.getElementById("torso").innerHTML = "Torso: Short sleeves";
             document.getElementById("img_torso").src = "./clothes/tshirt.png"
-            
+
             document.getElementById("shoes").innerHTML = "Shoes: Sandals";
             document.getElementById("img_footwear").src = "./clothes/sandals.png"
 
